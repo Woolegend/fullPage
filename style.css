@@ -1,0 +1,187 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html::-webkit-scrollbar {
+  display: none;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  padding: 10px;
+  z-index: 100;
+  display: flex;
+  width: 100%;
+  height: -moz-fit-content;
+  height: fit-content;
+  color: white;
+}
+
+aside {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 50%;
+  right: 10px;
+  transform: translate(0, -50%);
+  color: white;
+  text-align: center;
+  z-index: 100;
+}
+aside i {
+  font-size: 4px;
+  padding: 8px;
+  transition: all 1s;
+}
+
+a {
+  text-decoration: none;
+}
+a:visited {
+  color: white;
+}
+
+#randing {
+  background-color: black;
+}
+
+#page-2 {
+  background-color: mediumpurple;
+}
+
+#page-3 {
+  background-color: skyblue;
+}
+
+#page-4 {
+  background-color: coral;
+}
+
+.container {
+  overflow: hidden;
+  width: 100vw;
+  height: 100vh;
+}
+
+.page-container {
+  height: -moz-fit-content;
+  height: fit-content;
+  transform: translate(0, 0vh);
+  transition: all 1000ms;
+}
+
+.slide-container {
+  display: flex;
+  width: -moz-fit-content;
+  width: fit-content;
+  transform: translate(0vw, 0);
+  transition: all 1000ms;
+}
+
+.language {
+  display: block;
+  color: white;
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  padding: 10px;
+}
+
+.menu {
+  padding: 10px;
+  list-style-type: none;
+  display: flex;
+}
+.menu li {
+  padding: 10px 20px;
+}
+
+.page {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.slide {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+}
+
+.content {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  height: -moz-fit-content;
+  height: fit-content;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+}
+.content h1 {
+  font-size: 132px;
+}
+.content p {
+  font-size: 28px;
+}
+
+.btn-box {
+  display: flex;
+  margin-top: 24px;
+  justify-content: center;
+}
+.btn-box button {
+  margin-left: 10px;
+  margin-right: 10px;
+  padding: 12px 28px;
+  color: black;
+  font-size: 16px;
+  background-color: white;
+  border: none;
+  border-radius: 5px;
+}
+.btn-box button:hover {
+  background-color: #aaa;
+  color: white;
+}
+
+.btn-slide {
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  color: white;
+  font-size: 100px;
+}
+
+.left {
+  left: 40px;
+}
+
+.right {
+  right: 40px;
+}
+
+.github {
+  margin-top: 16px;
+}
+.github i {
+  padding: 10px;
+  font-size: 40px;
+}
+.github a:hover {
+  color: #aaa;
+}
+
+.arrow {
+  background-color: rgba(0, 0, 0, 0);
+  border: none;
+  color: white;
+  position: absolute;
+  top: 50%;
+  transform: translate(0, -50%);
+  padding: 20px;
+  font-size: 100px;
+}/*# sourceMappingURL=style.css.map */
